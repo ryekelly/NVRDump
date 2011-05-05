@@ -1,0 +1,1 @@
+Cocoa application to pull movie files from a Night Owl NONB-4DVR.  I've only built this to work with the full resolution movies (D1), although the AVI header could be adapter theoretically to any size/resolution. 
