@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		451DB9EA13712C300052A088 /* nvr.icns in Resources */ = {isa = PBXBuildFile; fileRef = 451DB9E913712C300052A088 /* nvr.icns */; };
+		45276DBD136FBDAE0015078D /* header.dat in Resources */ = {isa = PBXBuildFile; fileRef = 45276DBC136FBDAE0015078D /* header.dat */; };
+		45276DC1137066BE0015078D /* FrameBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 45276DC0137066BE0015078D /* FrameBuffer.m */; };
 		45E6846D136EDDF000DF7A8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E6846C136EDDF000DF7A8A /* Cocoa.framework */; };
 		45E68477136EDDF100DF7A8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45E68475136EDDF100DF7A8A /* InfoPlist.strings */; };
 		45E6847A136EDDF100DF7A8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E68479136EDDF100DF7A8A /* main.m */; };
@@ -17,6 +20,7 @@
 		45E68492136EDDF200DF7A8A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45E68490136EDDF200DF7A8A /* InfoPlist.strings */; };
 		45E68495136EDDF200DF7A8A /* NVRDumpTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 45E68494136EDDF200DF7A8A /* NVRDumpTests.h */; };
 		45E68497136EDDF200DF7A8A /* NVRDumpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E68496136EDDF200DF7A8A /* NVRDumpTests.m */; };
+		45E684A8136EE40D00DF7A8A /* Dumper.m in Sources */ = {isa = PBXBuildFile; fileRef = 45E684A7136EE40D00DF7A8A /* Dumper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,25 +34,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		451DB9E913712C300052A088 /* nvr.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = nvr.icns; sourceTree = "<group>"; };
+		45276DBC136FBDAE0015078D /* header.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = header.dat; sourceTree = "<group>"; };
+		45276DBF137066BE0015078D /* FrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameBuffer.h; sourceTree = "<group>"; };
+		45276DC0137066BE0015078D /* FrameBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameBuffer.m; sourceTree = "<group>"; };
 		45E68468136EDDF000DF7A8A /* NVRDump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVRDump.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E6846C136EDDF000DF7A8A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		45E6846F136EDDF000DF7A8A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		45E68470136EDDF000DF7A8A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		45E68471136EDDF000DF7A8A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		45E68474136EDDF100DF7A8A /* NVRDump-Info.plist */ = {isa = PBXFileReference; path = "NVRDump-Info.plist"; sourceTree = "<group>"; };
+		45E68474136EDDF100DF7A8A /* NVRDump-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NVRDump-Info.plist"; sourceTree = "<group>"; };
 		45E68476136EDDF100DF7A8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		45E68478136EDDF100DF7A8A /* NVRDump-Prefix.pch */ = {isa = PBXFileReference; path = "NVRDump-Prefix.pch"; sourceTree = "<group>"; };
+		45E68478136EDDF100DF7A8A /* NVRDump-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NVRDump-Prefix.pch"; sourceTree = "<group>"; };
 		45E68479136EDDF100DF7A8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		45E6847C136EDDF100DF7A8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		45E6847E136EDDF100DF7A8A /* NVRDumpAppDelegate.h */ = {isa = PBXFileReference; path = NVRDumpAppDelegate.h; sourceTree = "<group>"; };
+		45E6847E136EDDF100DF7A8A /* NVRDumpAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVRDumpAppDelegate.h; sourceTree = "<group>"; };
 		45E6847F136EDDF100DF7A8A /* NVRDumpAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVRDumpAppDelegate.m; sourceTree = "<group>"; };
 		45E68482136EDDF100DF7A8A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		45E68489136EDDF200DF7A8A /* NVRDumpTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVRDumpTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45E6848F136EDDF200DF7A8A /* NVRDumpTests-Info.plist */ = {isa = PBXFileReference; path = "NVRDumpTests-Info.plist"; sourceTree = "<group>"; };
+		45E6848F136EDDF200DF7A8A /* NVRDumpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NVRDumpTests-Info.plist"; sourceTree = "<group>"; };
 		45E68491136EDDF200DF7A8A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		45E68493136EDDF200DF7A8A /* NVRDumpTests-Prefix.pch */ = {isa = PBXFileReference; path = "NVRDumpTests-Prefix.pch"; sourceTree = "<group>"; };
+		45E68493136EDDF200DF7A8A /* NVRDumpTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NVRDumpTests-Prefix.pch"; sourceTree = "<group>"; };
 		45E68494136EDDF200DF7A8A /* NVRDumpTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVRDumpTests.h; sourceTree = "<group>"; };
 		45E68496136EDDF200DF7A8A /* NVRDumpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NVRDumpTests.m; sourceTree = "<group>"; };
+		45E684A6136EE40D00DF7A8A /* Dumper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dumper.h; sourceTree = "<group>"; };
+		45E684A7136EE40D00DF7A8A /* Dumper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dumper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,10 @@
 			children = (
 				45E6847E136EDDF100DF7A8A /* NVRDumpAppDelegate.h */,
 				45E6847F136EDDF100DF7A8A /* NVRDumpAppDelegate.m */,
+				45E684A6136EE40D00DF7A8A /* Dumper.h */,
+				45E684A7136EE40D00DF7A8A /* Dumper.m */,
+				45276DBF137066BE0015078D /* FrameBuffer.h */,
+				45276DC0137066BE0015078D /* FrameBuffer.m */,
 				45E68481136EDDF100DF7A8A /* MainMenu.xib */,
 				45E68473136EDDF100DF7A8A /* Supporting Files */,
 			);
@@ -126,6 +140,8 @@
 				45E68474136EDDF100DF7A8A /* NVRDump-Info.plist */,
 				45E68475136EDDF100DF7A8A /* InfoPlist.strings */,
 				45E68478136EDDF100DF7A8A /* NVRDump-Prefix.pch */,
+				451DB9E913712C300052A088 /* nvr.icns */,
+				45276DBC136FBDAE0015078D /* header.dat */,
 				45E68479136EDDF100DF7A8A /* main.m */,
 				45E6847B136EDDF100DF7A8A /* Credits.rtf */,
 			);
@@ -225,6 +241,8 @@
 				45E68477136EDDF100DF7A8A /* InfoPlist.strings in Resources */,
 				45E6847D136EDDF100DF7A8A /* Credits.rtf in Resources */,
 				45E68483136EDDF100DF7A8A /* MainMenu.xib in Resources */,
+				45276DBD136FBDAE0015078D /* header.dat in Resources */,
+				451DB9EA13712C300052A088 /* nvr.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +280,8 @@
 			files = (
 				45E6847A136EDDF100DF7A8A /* main.m in Sources */,
 				45E68480136EDDF100DF7A8A /* NVRDumpAppDelegate.m in Sources */,
+				45E684A8136EE40D00DF7A8A /* Dumper.m in Sources */,
+				45276DC1137066BE0015078D /* FrameBuffer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +464,7 @@
 				45E6849C136EDDF200DF7A8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		45E6849D136EDDF200DF7A8A /* Build configuration list for PBXNativeTarget "NVRDumpTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +473,7 @@
 				45E6849F136EDDF200DF7A8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
