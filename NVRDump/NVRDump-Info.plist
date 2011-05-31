@@ -7,9 +7,11 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>nvr.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>org.imacomputa.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
